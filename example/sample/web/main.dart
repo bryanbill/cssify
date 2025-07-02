@@ -4,9 +4,14 @@ import 'package:web/web.dart' as web;
 void main() {
   final now = DateTime.now();
   final element = web.document.querySelector('#output') as web.HTMLDivElement;
-  final css = cssify(styles, {
-    'sm': 
-  });
+  final css = cssify(
+    styles,
+    mediaConfig: {
+      'base': MediaConfig(screen: {'min-width': '320px'}),
+      'md': MediaConfig(screen: {'min-width': '768px'}),
+      'lg': MediaConfig(screen: {'min-width': '992px'}),
+    },
+  );
 
   // add to the header
   final styleElement = web.HTMLStyleElement();
