@@ -24,7 +24,7 @@
 ///                   },
 ///                })
 ///             ];
-/// 
+///
 ///     String css = cssify(styles);
 ///     print(css);
 /// }
@@ -42,5 +42,8 @@
 library;
 
 export 'src/cssify.dart';
+export 'src/generator.dart';
+export 'src/style_config.dart';
+export 'src/media_config.dart';
 
 // Export any additional libraries intended for clients of this package below.
