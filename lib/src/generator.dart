@@ -55,6 +55,14 @@ class Generator {
           '${cssify.selector}:$state {\n${_formatStyle(properties)}\n}\n',
         );
       });
+      // Keyframes support
+      base.keyframes.forEach((kfName, steps) {
+        css.write('@keyframes $kfName {\n');
+        steps.forEach((step, props) {
+          css.write('  $step {\n${_formatStyle(props)}\n  }\n');
+        });
+        css.write('}\n');
+      });
     }
     return css.toString();
   }
@@ -94,6 +102,14 @@ class Generator {
             output.write(
               '  ${cssify.selector}:$state {\n${_formatStyle(properties)}\n  }\n',
             );
+          });
+          // Keyframes support for breakpoints
+          config.keyframes.forEach((kfName, steps) {
+            output.write('  @keyframes $kfName {\n');
+            steps.forEach((step, props) {
+              output.write('    $step {\n${_formatStyle(props)}\n    }\n');
+            });
+            output.write('  }\n');
           });
         }
       }

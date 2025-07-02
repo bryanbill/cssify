@@ -9,6 +9,7 @@ Generate and manage CSS styles programmatically in Dart. Effortlessly create res
 - **Define CSS in Dart:** Use Dart classes and functions to build CSS rules.
 - **Responsive by Design:** Built-in support for breakpoints and media queries.
 - **Stateful Styling:** Easily add styles for pseudo-classes like `:hover`, `:active`, and more.
+- **Keyframes and Animations:** Define complex animations and transitions.
 - **Extensible:** Compose, extend, and customize your style logic.
 - **Type-Safe:** Enjoy compile-time safety and autocompletion in your editor.
 

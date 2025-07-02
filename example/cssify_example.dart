@@ -41,6 +41,16 @@ void main() {
         },
       },
     }),
+    Cssify.create('.animate-in', {
+      'base': {
+        'keyframes': {
+          'fadeIn': {
+            '0%': {'opacity': '0'},
+            '100%': {'opacity': '1'},
+          },
+        },
+      },
+    }),
   ];
 
   String css = cssify(styles);
