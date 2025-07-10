@@ -1,7 +1,7 @@
 name: cssify
 description: >
   Generate and manage CSS styles programmatically in Dart. Effortlessly create responsive, maintainable, and dynamic CSS for your web projects—all from Dart.
-version: 1.0.0
+version: 0.1.0
 repository: https://github.com/bryanbill/cssify
 homepage: https://pub.dev/packages/cssify
 documentation: https://pub.dev/documentation/cssify/latest/

@@ -21,7 +21,7 @@ Add cssify to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  cssify: ^1.0.0
+  cssify: ^0.1.0
 ```
 
 Import it in your Dart code:
