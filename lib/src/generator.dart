@@ -79,6 +79,7 @@ class Generator {
       for (var cssify in styles)
         ...cssify.breakpoints.keys.where((k) => k != 'base'),
     };
+    
     for (var breakpoint in allBreakpoints) {
       if (!mediaConfig.containsKey(breakpoint)) continue;
       final media = mediaConfig[breakpoint]!;
